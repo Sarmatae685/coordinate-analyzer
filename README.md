@@ -29,7 +29,7 @@ python3 coordinate_analyzer.py
 
 ## Example of usage
 ### Enter coords:
-```bash
+```
 ==================================================
 ANALYSIS OF POINT COORDINATES
 ==================================================
@@ -53,7 +53,7 @@ Enter X coordinate: [Enter to finish]
 ...
 ```
 ### After processing:
-```bash
+```
 ==================================================
 ANALYSIS RESULTS
 ==================================================
