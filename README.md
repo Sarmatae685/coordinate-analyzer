@@ -38,6 +38,13 @@ pip install -r requirements.txt
 python3 coordinate_analyzer.py
 ```
 
+> [!TIP]
+> To disable `venv`:
+> ```bash
+> deactivate
+> ```
+
+
 ## Example of usage
 ### Interactive Input
 ```
