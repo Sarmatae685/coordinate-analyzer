@@ -31,7 +31,7 @@ python3 coordinate_analyzer.py
 ### Enter coords:
 ```
 ==================================================
-ANALYSIS OF POINT COORDINATES
+COORDINATE POINTS ANALYSIS
 ==================================================
 
 Enter the coordinates of the points.
@@ -52,19 +52,20 @@ Enter the coordinate Y: -1
 Enter X coordinate: [Enter to finish]
 ...
 ```
-### After processing:
+### Console Output:
 ```
 ==================================================
 ANALYSIS RESULTS
 ==================================================
 
 Point (1.0, 1.0) in I quadrant
-Distance from the origin to the point: 1.4142135623730951
-The angle between the X-axis: 45.0°
+Distance from the origin to the point: 1.41
+The angle between the X-axis: 45.00°
 --------------------------------------------------
 Point (-1.0, -1.0) in III quadrant
-Distance from the origin to the point: 1.4142135623730951
-The angle between the X-axis: -135.0°
+Distance from the origin to the point: 1.41
+The angle between the X-axis: -135.00°
+--------------------------------------------------
 ...
 ```
 ### Output:
