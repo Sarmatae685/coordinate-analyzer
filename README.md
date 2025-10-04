@@ -68,7 +68,7 @@ The angle between the X-axis: -135.0°
 ...
 ```
 ### Output:
-Scrrenshot
+![Example](screenshots/image.png)
 
 ## Technologies
 - `Python 3.10+` (uses pattern matching with match-case)
