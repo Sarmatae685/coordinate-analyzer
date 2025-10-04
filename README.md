@@ -1,5 +1,5 @@
 # Coordinate Points Analyzer 📊
-A Python program for analyzing and visualizing points on a coordinate plane, defining it's position and angle
+A Python program for analyzing and visualizing points on a coordinate plane, defining its position and angle
 
 ## Features
 - ✅ Determine which quadrant a point belongs to
@@ -10,6 +10,11 @@ A Python program for analyzing and visualizing points on a coordinate plane, def
 - ✅ Color-coded quadrants
 
 ## Installation
+### Prerequisites
+- Python 3.10 or higher
+- pip3
+
+### Setup
 
 1. Clone the repository:
 ```bash
@@ -17,18 +22,24 @@ git clone https://github.com/Sarmatae685/coordinate-analyzer.git
 cd coordinate-analyzer
 ```
 
-2. Install dependencies:
+2. Create and activate virtual environment (recommended):
 ```bash
-pip3 install -r requirements.txt
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Run the program:
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the program:
 ```bash
 python3 coordinate_analyzer.py
 ```
 
 ## Example of usage
-### Enter coords:
+### Interactive Input
 ```
 ==================================================
 COORDINATE POINTS ANALYSIS
@@ -39,20 +50,20 @@ To complete the entry, leave the field blank and press Enter.
 
 
 --- Point 1 ---
-Enter the coordinate X: 1
-Enter the coordinate Y: 1
+Enter X coordinate: 1
+Enter Y coordinate: 1
 ✓ Added point: (1, 1)
 
 --- Point 2 ---
-Enter the coordinate X: -1
-Enter the coordinate Y: -1
+Enter X coordinate: -1
+Enter Y coordinate: -1
 ✓ Added point: (-1, -1)
 
 --- Point 3 ---
-Enter X coordinate: [Enter to finish]
+Enter X coordinate:  [Enter to finish]
 ...
 ```
-### Console Output:
+### Console Output
 ```
 ==================================================
 ANALYSIS RESULTS
@@ -68,13 +79,16 @@ The angle between the X-axis: -135.00°
 --------------------------------------------------
 ...
 ```
-### Output:
-![Example](screenshots/image.png)
+### Visualization
+![Example](screenshots/example.png)
 
 ## Technologies
 - `Python 3.10+` (uses pattern matching with match-case)
 - `matplotlib` — for graph visualization
 - `math` — for trigonometric calculations
 
+## License
+MIT License - see [LICENSE](LICENSE) file for details  
 
+## Star⭐
 ⭐ If you found this helpful, please star the repo!
