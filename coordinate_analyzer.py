@@ -20,22 +20,22 @@ def analyze_coordinates(point):
         case [x, y] if x > 0 and y > 0:
             distance = math.sqrt(x**2 + y**2)   # відстань від початку координат до точки sqrt((0-x)**2 + (0-12)**2)
             angle = math.degrees(math.atan2(y, x))  #atan2() у радіанах, degrees() перетворить у градуси
-            result = f"Point ({x}, {y}) in I quadrant\nDistance from the origin to the point: {distance}\nThe angle between the X-axis: {angle}°"
+            result = f"Point ({x}, {y}) in I quadrant\nDistance from the origin to the point: {distance:.2f}\nThe angle between the X-axis: {angle:.2f}°"
             quadrant = "I"
         case [x, y] if x < 0 and y > 0:
             distance = math.sqrt(x**2 + y**2)
             angle = math.degrees(math.atan2(y, x))
-            result = f"Point ({x}, {y}) in II quadrant\nDistance from the origin to the point: {distance}\nThe angle between the X-axis: {angle}°"
+            result = f"Point ({x}, {y}) in II quadrant\nDistance from the origin to the point: {distance:.2f}\nThe angle between the X-axis: {angle:.2f}°"
             quadrant = "II"
         case [x, y] if x < 0 and y < 0:
             distance = math.sqrt(x**2 + y**2)
             angle = math.degrees(math.atan2(y, x))
-            result = f"Point ({x}, {y}) in III quadrant\nDistance from the origin to the point: {distance}\nThe angle between the X-axis: {angle}°"
+            result = f"Point ({x}, {y}) in III quadrant\nDistance from the origin to the point: {distance:.2f}\nThe angle between the X-axis: {angle:.2f}°"
             quadrant = "III"
         case [x, y] if x > 0 and y < 0:
             distance = math.sqrt(x ** 2 + y ** 2)
             angle = math.degrees(math.atan2(y, x))
-            result = f"Point ({x}, {y}) in IV quadrant\nDistance from the origin to the point: {distance}\nThe angle between the X-axis: {angle}°"
+            result = f"Point ({x}, {y}) in IV quadrant\nDistance from the origin to the point: {distance:.2f}\nThe angle between the X-axis: {angle:.2f}°"
             quadrant = "IV"
         case _:
             result = f"Incorrect point {point}"
@@ -107,7 +107,7 @@ def get_points():
     points = []
 
     print("=" * 50)
-    print("ANALYSIS OF POINT COORDINATES")
+    print("COORDINATE POINTS ANALYSIS")
     print("=" * 50)
     print("\nEnter the coordinates of the points.")
     print("To complete the entry, leave the field blank and press Enter.\n")
@@ -116,11 +116,11 @@ def get_points():
     while (True):
         print(f"\n--- Point {point_count} ---")
 
-        x = input("Enter the coordinate X: ").strip()
+        x = input("Enter X coordinate: ").strip()
         if not x:
             break
 
-        y = input("Enter the coordinate Y: ").strip()
+        y = input("Enter Y coordinate: ").strip()
         if not y:
             break
 
