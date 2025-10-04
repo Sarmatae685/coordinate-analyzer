@@ -27,6 +27,49 @@ pip3 install -r requirements.txt
 python3 coordinate_analyzer.py
 ```
 
+## Example of usage
+### Enter coords:
+```bash
+==================================================
+ANALYSIS OF POINT COORDINATES
+==================================================
+
+Enter the coordinates of the points.
+To complete the entry, leave the field blank and press Enter.
+
+
+--- Point 1 ---
+Enter the coordinate X: 1
+Enter the coordinate Y: 1
+✓ Added point: (1, 1)
+
+--- Point 2 ---
+Enter the coordinate X: -1
+Enter the coordinate Y: -1
+✓ Added point: (-1, -1)
+
+--- Point 3 ---
+Enter X coordinate: [Enter to finish]
+...
+```
+### After processing:
+```bash
+==================================================
+ANALYSIS RESULTS
+==================================================
+
+Point (1.0, 1.0) in I quadrant
+Distance from the origin to the point: 1.4142135623730951
+The angle between the X-axis: 45.0°
+--------------------------------------------------
+Point (-1.0, -1.0) in III quadrant
+Distance from the origin to the point: 1.4142135623730951
+The angle between the X-axis: -135.0°
+...
+```
+### Output:
+Scrrenshot
+
 ## Technologies
 - `Python 3.10+` (uses pattern matching with match-case)
 - `matplotlib` — for graph visualization
