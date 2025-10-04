@@ -19,12 +19,12 @@ cd coordinate-analyzer
 
 2. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 3. Run the program:
 ```bash
-python coordinate_analyzer.py
+python3 coordinate_analyzer.py
 ```
 
 ## Technologies
